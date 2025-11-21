@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGERBITES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.8/assets/owl.carousel.min.css">
+    <link rel="icon" type="image/png" href="img/burger.png">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">BURGERBITES</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="#home" class="nav-item nav-link">Home</a>
+                    <a href="#about-us" class="nav-item nav-link">About</a>
+                    <a href="#special-offers" class="nav-item nav-link">Specials</a>
+                    <a href="#menu" class="nav-item nav-link">Menu</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="#reservation" class="dropdown-item">Reservation</a>
+                            <a href="#testimonial" class="dropdown-item">Testimonial</a>
+                            <a href="#gallery" class="dropdown-item">Gallery</a>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div id="home" class="container-fluid page-header mb-5 position-relative overlay-bottom" style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Welcome to BURGERBITES</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white">Home</p>
+            </div>
+            <a href="#menu" class="btn btn-primary btn-lg mt-3">Order Online</a>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 fade-in" data-aos="fade-up" data-aos-duration="800" id="about-us">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
+                <h1 class="display-4">How BURGERBITES Was Built</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Where It All Started</h1>
+                    <h5 class="mb-3">BURGERBITES began as a small backyard grill project between two friends who loved creating bold, handcrafted burgers.</h5>
+                    <p>Armed with nothing but a homemade grill, a secret patty blend, and a dream to make the perfect burger, they started serving friends, family, and neighbors. Word spread fast — the flavor spoke for itself.</p>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Growing the Flame</h1>
+                    <p>After months of perfecting recipes and testing different grill techniques, they built their first small shop — a cozy burger spot with just a few tables but huge passion.</p>
+                    <p>From day one, everything was handmade: the sauces, the brioche buns, the flame-grilled patties. People loved the authenticity, and BURGERBITES quickly grew into a local favorite.</p>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Started from a backyard grill</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Recipes perfected through trial and passion</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Built with heart, flavor, and community support</h5>
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/about1.png" style="object-fit: contain;" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Special Offers Start -->
+    <div class="container-fluid py-5" id="special-offers" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">🔥 Flame-Grilled Specials 🔥</h4>
+                <h1 class="display-4">Sizzling Hot Deals</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="special-offer-card grill-pattern">
+                        <div class="flame-overlay"></div>
+                        <div class="special-offer-badge flame-badge">20% OFF</div>
+                        <img src="img/grill1.jpg" alt="BBQ Bacon Burger Special - Flame-grilled perfection" class="img-fluid mb-3" loading="lazy">
+                        <h5>BBQ Bacon Burger Combo</h5>
+                        <p>Get our flame-grilled BBQ Bacon Burger with crispy fries and a refreshing drink for just $12.99 (was $16.99).</p>
+                        <span class="special-price">$12.99</span>
+                        <span class="original-price">$16.99</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="special-offer-card grill-pattern">
+                        <div class="flame-overlay"></div>
+                        <div class="special-offer-badge flame-badge">Buy 1 Get 1</div>
+                        <img src="img/grill2.jpg" alt="Creamy Milkshake Special - Cool down after the heat" class="img-fluid mb-3" loading="lazy">
+                        <h5>Milkshake Madness</h5>
+                        <p>Buy one thick, creamy milkshake, get the second one half off. The perfect cool complement to our hot burgers!</p>
+                        <span class="special-price">From $4.50</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="special-offer-card grill-pattern">
+                        <div class="flame-overlay"></div>
+                        <div class="special-offer-badge flame-badge">Family Deal</div>
+                        <img src="img/grill3.jpg" alt="Family Feast Deal - Share the flame-grilled goodness" class="img-fluid mb-3" loading="lazy">
+                        <h5>Family Feast</h5>
+                        <p>4 juicy flame-grilled burgers, 4 drinks, and 2 sides for $39.99. Gather 'round and share the heat!</p>
+                        <span class="special-price">$39.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Special Offers End -->
+
+    <!-- Menu Start -->
+    <div class="container-fluid py-5 fade-in" id="menu" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Menu</h4>
+                <h1 class="display-4">Delicious Burgers & Drinks</h1>
+            </div>
+            <section class="bd-grid">
+                <article class="card">
+                    <img src="img/cheeseburger.jpg" alt="Classic Cheeseburger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Popular</span>
+                    <span class="card__name">Classic Cheeseburger</span>
+                    <p class="card__precis">Juicy beef patty with melted cheese and fresh veggies.</p>
+                    <span class="card__price">$7.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/BBQBurger.jpg" alt="BBQ Bacon Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">New</span>
+                    <span class="card__name">BBQ Bacon Burger</span>
+                    <p class="card__precis">Smoky BBQ sauce, crispy bacon, and cheddar.</p>
+                    <span class="card__price">$8.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/veggieburger.jpg" alt="Veggie Delight" class="card__img" loading="lazy" />
+                    <span class="card__badge">Veggie</span>
+                    <span class="card__name">Veggie Delight</span>
+                    <p class="card__precis">Grilled mushroom & bean patty with fresh toppings.</p>
+                    <span class="card__price">$6.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/spicyjalapenoburger.jpg" alt="Spicy Jalapeño Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Spicy</span>
+                    <span class="card__name">Spicy Jalapeño Burger</span>
+                    <p class="card__precis">Beef patty with jalapeños, pepper jack, and spicy mayo.</p>
+                    <span class="card__price">$9.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/icedlemonade.jpg" alt="Iced Lemonade" class="card__img" loading="lazy" />
+                    <span class="card__badge">Refreshing</span>
+                    <span class="card__name">Iced Lemonade</span>
+                    <p class="card__precis">Freshly squeezed lemons served ice-cold.</p>
+                    <span class="card__price">$3.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/chocolatemilkshake.jpg" alt="Chocolate Milkshake" class="card__img" loading="lazy" />
+                    <span class="card__badge">Premium</span>
+                    <span class="card__name">Chocolate Milkshake</span>
+                    <p class="card__precis">Thick, creamy, and loaded with chocolate.</p>
+                    <span class="card__price">$4.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/classicsoda.jpg" alt="Classic Soda" class="card__img" loading="lazy" />
+                    <span class="card__badge">Classic</span>
+                    <span class="card__name">Classic Soda</span>
+                    <p class="card__precis">Chilled fountain soda to pair with your burger.</p>
+                    <span class="card__price">$2.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/strawberrysmoothie.jpg" alt="Strawberry Smoothie" class="card__img" loading="lazy" />
+                    <span class="card__badge">Healthy</span>
+                    <span class="card__name">Strawberry Smoothie</span>
+                    <p class="card__precis">Fresh strawberries blended with yogurt and honey.</p>
+                    <span class="card__price">$5.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/mushroomburger.jpg" alt="Mushroom Swiss Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Gourmet</span>
+                    <span class="card__name">Mushroom Swiss Burger</span>
+                    <p class="card__precis">Sautéed mushrooms, Swiss cheese, and garlic aioli.</p>
+                    <span class="card__price">$9.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/avocadoburger.jpg" alt="Bacon Avocado Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Premium</span>
+                    <span class="card__name">Bacon Avocado Burger</span>
+                    <p class="card__precis">Crispy bacon, fresh avocado, lettuce, and tomato.</p>
+                    <span class="card__price">$10.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/blackbean.jpg" alt="Black Bean Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Vegan</span>
+                    <span class="card__name">Black Bean Burger</span>
+                    <p class="card__precis">Spicy black bean patty with salsa and guacamole.</p>
+                    <span class="card__price">$7.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/vanillamilkshake.jpg" alt="Vanilla Milkshake" class="card__img" loading="lazy" />
+                    <span class="card__badge">Classic</span>
+                    <span class="card__name">Vanilla Milkshake</span>
+                    <p class="card__precis">Creamy vanilla ice cream blended to perfection.</p>
+                    <span class="card__price">$4.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/strawberrylemonade.jpg" alt="Strawberry Lemonade" class="card__img" loading="lazy" />
+                    <span class="card__badge">Refreshing</span>
+                    <span class="card__name">Strawberry Lemonade</span>
+                    <p class="card__precis">Fresh strawberries mixed with tangy lemonade.</p>
+                    <span class="card__price">$3.50</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/chickenburger.jpg" alt="Chicken Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Grilled</span>
+                    <span class="card__name">Chicken Burger</span>
+                    <p class="card__precis">Grilled chicken breast with lettuce and mayo.</p>
+                    <span class="card__price">$8.00</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/spicychicken.jpg" alt="Spicy Chicken Burger" class="card__img" loading="lazy" />
+                    <span class="card__badge">Spicy</span>
+                    <span class="card__name">Spicy Chicken Burger</span>
+                    <p class="card__precis">Spicy grilled chicken breast with jalapeños, lettuce, and spicy mayo.</p>
+                    <span class="card__price">$9.50</span>
+                </article>
+            </section>
+            <div class="text-center mt-5">
+                <a href="#reservation" class="btn btn-primary btn-lg px-5 py-3">Reserve Your Table Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+
+
+
+    <!-- Reservation Start -->
+    <div class="container-fluid py-5" id="reservation" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reservation</h4>
+                <h1 class="display-4">Book Your Table</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="reservation-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="time" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value="">Party Size</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5+ People</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" placeholder="Special Requests (e.g. high chair, birthday)"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary font-weight-bold py-2 px-4">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="reservation-info">
+                        <h3>Reservation Information</h3>
+                        <p>Reserve a spot and enjoy our signature burgers in a cozy setting. We recommend booking in advance during evenings and weekends.</p>
+                        <ul>
+                            <li>Reservations are held for 15 minutes past the reserved time.</li>
+                            <li>Large groups (8+) may require notice for seating.</li>
+                            <li>Call ahead for any special menu requests.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5" id="testimonial" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+                <h1 class="display-4">What Our Customers Say</h1>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial1.jpg" alt="Customer 1" loading="lazy">
+                            <p class="mb-4">"Best burger in the city — perfect char and juicy patties!"</p>
+                            <h5>Mark Dela Cruz</h5>
+                            <span>Foodie</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial2.jpg" alt="Customer 2" loading="lazy">
+                            <p class="mb-4">"Loved the milkshake pairing. Friendly staff and fast service."</p>
+                            <h5>Ana Rivera</h5>
+                            <span>Regular</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial3.jpg" alt="Customer 3" loading="lazy">
+                            <p class="mb-4">"Great vegetarian options — the Veggie Delight is a winner."</p>
+                            <h5>Li Wei</h5>
+                            <span>Local</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial4.jpg" alt="Customer 4" loading="lazy">
+                            <p class="mb-4">"The Spicy Jalapeño Burger is a game-changer! Perfect heat level."</p>
+                            <h5>Carlos Mendoza</h5>
+                            <span>Spice Lover</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial5.jpg" alt="Customer 5" loading="lazy">
+                            <p class="mb-4">"Family Feast deal made our weekend special. Highly recommend!"</p>
+                            <h5>Sarah Johnson</h5>
+                            <span>Family Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Gallery Start -->
+    <div class="container-fluid py-5" id="gallery" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Gallery</h4>
+                <h1 class="display-4">Our Food & Space</h1>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/signature1.jpg" alt="Signature Burger" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/signature2.jpg" alt="Milkshakes" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/signature3.jpg" alt="Interior" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/signature4.jpg" alt="Grill in Action" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/signature5.jpg" alt="Plated Meal" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/signature6.jpg" alt="Cozy Seating" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
+                <h1 class="display-4">Get In Touch</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary font-weight-bold py-2 px-4">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Have questions or want to place a special order? Reach out to us!</p>
+                        <div class="contact-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <span>123 Street, Manila, Philippines</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-phone-alt"></i>
+                            <span>+012 345 67890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <span>info@burgerbites.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-clock"></i>
+                            <span>Mon-Fri: 8AM-9PM, Sat-Sun: 9AM-9PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">BURGERBITES</h4>
+                <p class="mb-3">Handcrafted burgers made with care. Visit us for a meal that hits the spot.</p>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 tooltip" href="#" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 tooltip" href="#" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 tooltip" href="#" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Quick Links</h4>
+                <div class="d-flex flex-column">
+                    <a href="#home" class="text-white mb-2">Home</a>
+                    <a href="#about-us" class="text-white mb-2">About</a>
+                    <a href="#special-offers" class="text-white mb-2">Specials</a>
+                    <a href="#menu" class="text-white mb-2">Menu</a>
+                    <a href="#reservation" class="text-white mb-2">Reservation</a>
+                    <a href="#testimonial" class="text-white mb-2">Testimonial</a>
+                    <a href="#gallery" class="text-white mb-2">Gallery</a>
+                    <a href="#contact" class="text-white mb-2">Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, Manila, Philippines</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@burgerbites.com</p>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
+                    <p>8.00 AM - 9.00 PM</p>
+                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
+                    <p>9.00 AM - 9.00 PM</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+                <p>Subscribe for exclusive deals and updates.</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="email" class="form-control border-light" style="padding: 25px;" placeholder="Enter your email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                        </div>
+                    </div>
+                    <small class="text-white-50 mt-2 d-block">We respect your privacy. Unsubscribe at any time.</small>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">BURGERBITES</a>. All Rights Reserved.</p>
+            <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="#">Your Team</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary btn-lg-square" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- Modal for Gallery -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.8/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

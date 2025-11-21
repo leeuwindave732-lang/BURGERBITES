@@ -1,0 +1,638 @@
+/* Responsive CSS inspired by Boba Co - Modern, clean, and mobile-first design */
+
+/* Mobile First - Base styles for small screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 2rem 0 1rem;
+    }
+
+    .section__title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .home__title {
+        font-size: 1.25rem;
+    }
+
+    .home__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .home__button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Enhanced navbar toggler visibility for mobile */
+    .navbar-toggler {
+        display: block;
+        background: rgba(255, 255, 255, 0.9) !important;
+        border: 1px solid rgba(255, 255, 255, 0.95) !important;
+        border-radius: 6px;
+        padding: 0.5rem;
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-toggler:hover {
+        background: rgba(255, 255, 255, 1) !important;
+        transform: scale(1.05);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav__list {
+        gap: 1rem;
+    }
+
+    .nav__link {
+        font-size: 0.9rem;
+    }
+
+    .menu__content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .menu__item {
+        padding: 1rem;
+    }
+
+    .menu__item-img {
+        height: 120px;
+    }
+
+    .menu__item-title {
+        font-size: 1rem;
+    }
+
+    .menu__item-description {
+        font-size: 0.8rem;
+    }
+
+    .menu__item-price {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card__name {
+        font-size: 1rem;
+    }
+
+    .card__precis {
+        font-size: 0.8rem;
+    }
+
+    .card__price {
+        font-size: 1rem;
+    }
+
+    .bd-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .section-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+    }
+
+    .testimonial-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .reservation-form,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-item i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer__container {
+        row-gap: 1rem;
+    }
+
+    .footer__title {
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .section {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .section__title {
+        font-size: 1.75rem;
+    }
+
+    .home__title {
+        font-size: 2rem;
+    }
+
+    .home__subtitle {
+        font-size: 1rem;
+    }
+
+    /* Enhanced navigation for tablets - collapsible for better space management */
+    .navbar-toggler {
+        display: block;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 6px;
+        padding: 0.5rem;
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-toggler:hover {
+        background: rgba(253, 238, 238, 0.996);
+        transform: scale(1.05);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 4rem;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 4rem);
+        background: rgba(0, 0, 0, 0.95);
+        padding: 2rem;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        backdrop-filter: blur(20px);
+        border-radius: 0 0 0 15px;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link {
+        color: #fff !important;
+        font-size: 1.1rem;
+        padding: 0.75rem 0;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        color: #007bff !important;
+        transform: translateX(5px);
+    }
+
+    .dropdown-menu {
+        position: static;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 8px;
+        box-shadow: none;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .dropdown-item {
+        color: #fff;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .dropdown-item:hover {
+        background: rgba(0, 123, 255, 0.2);
+        color: #fff;
+        transform: translateX(5px);
+    }
+
+    .dropdown-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Improved menu layout */
+    .menu__content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .menu__item {
+        padding: 1.5rem;
+    }
+
+    .menu__item-img {
+        height: 160px;
+    }
+
+    .menu__item-title {
+        font-size: 1.2rem;
+    }
+
+    .menu__item-description {
+        font-size: 0.9rem;
+    }
+
+    .menu__item-price {
+        font-size: 1.2rem;
+    }
+
+    /* Enhanced card layouts */
+    .bd-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .card__img {
+        height: 200px;
+    }
+
+    .card__name {
+        font-size: 1.2rem;
+    }
+
+    .card__precis {
+        font-size: 0.9rem;
+    }
+
+    .card__price {
+        font-size: 1.2rem;
+    }
+
+    /* Responsive page headers */
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title h1 {
+        font-size: 2rem;
+    }
+
+    /* Enhanced testimonials */
+    .testimonial-item {
+        padding: 30px;
+        margin: 0 2rem;
+    }
+
+    .testimonial-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-item p {
+        font-size: 1rem;
+    }
+
+    .testimonial-item h5 {
+        font-size: 1.2rem;
+    }
+
+    /* Improved forms */
+    .reservation-form,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .form-control {
+        padding: 0.875rem;
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.875rem 2.5rem;
+        font-size: 1rem;
+    }
+
+    /* Enhanced contact info */
+    .contact-item {
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contact-item span {
+        font-size: 1rem;
+    }
+
+    /* Responsive footer */
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer__title {
+        font-size: 1.2rem;
+    }
+
+    /* Gallery improvements */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+    /* About section improvements */
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about__container > div {
+        padding: 2rem 0;
+    }
+
+    /* Reservation improvements */
+    .reservation__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .reservation-info {
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+    }
+
+    .reservation-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .reservation-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .reservation-info ul {
+        padding-left: 1.5rem;
+    }
+
+    .reservation-info li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Contact improvements */
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .section {
+        padding: 4rem 0 2rem;
+    }
+
+    .menu__content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .bd-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .section__title {
+        font-size: 2.5rem;
+    }
+
+    .home__title {
+        font-size: 3.5rem;
+    }
+
+    .menu__content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .bd-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem;
+    }
+}
+
+/* Additional responsive utilities inspired by modern designs */
+@media (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 3rem;
+        right: -100%;
+        width: 70%;
+        height: calc(100vh - 3rem);
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 2rem;
+        transition: right 0.3s ease;
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 0 10px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .nav__toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+
+    .home {
+        height: 80vh;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .services__container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+}
+
+/* Smooth animations for better UX */
+.fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Touch-friendly buttons on mobile */
+@media (max-width: 768px) {
+    button, .btn, .nav__link, .card {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Improved readability on small screens */
+@media (max-width: 576px) {
+    body {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
